@@ -52,7 +52,7 @@ class App extends Component {
           {
             this.state.results.map((item, i) => (
               <div key={item} className="col-sm-3 text-center">
-                <div className={this.state.cursor === i ? 'active' : null} ref={'f' + i} onKeyPress={this.handlePressEnter}>
+                <div className={this.state.cursor === i ? 'active' : null}>
                   { item }
                 </div>
               </div>
